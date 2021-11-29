@@ -1,1360 +1,382 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Home page</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-
-	<!-- <link rel="stylesheet" href="css/lib.min.css"> -->
-	<link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <title>Hotel Giftcard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
 
-	<div class="wrapper">
-		<!-- HEADER -->
-		<header class="header">
-			<div class="container">
-				<div class="header-inner">
-					<a href="#" class="header-logo for-img">
-						<img src="img/logo.png" alt="">
-					</a>
-					<nav class="header-nav">
-						<ul class="header-menu menu">
-							<li class="menu-action">
-								<button class="burger burger-hide">
-									<span class="burger-icon"></span>
-									<span class="burger-text">Menu</span>
-								</button>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">IPv4</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link menu-link_active">IPv6</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">FAQ</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">Поддержка</a>
-							</li>
-						</ul>
-					</nav>
-					<button class="burger burger-show">
-						<span class="burger-icon"></span>
-						<span class="burger-text">Menu</span>
-					</button>
-				</div>
-			</div>
-		</header>
-		<!-- HEADER END -->
+    <div class="wrapper">
 
-		<!-- CONTENT -->
-		<div class="content-wrapper">
+      <!-- HEADER END -->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo for-img">
+              <img src="./images/logo.svg" alt="Hotel Giftcard Logo">
+            </a>
+            <div class="header__nav__wrapper">
+              <nav class="header__nav">
+                <ul class="header__nav__list">
+                  <li class="header__nav__item"><a href="" class="header__nav__link">Zakelijk</a></li>
+                  <li class="header__nav__item"><a href="" class="header__nav__link">Saldo check</a></li>
+                </ul>
+              </nav>
+              <div class="header__actions">
+                <button class="header__btn button button__primary">
+                  <span class="button__circle"></span>
+                  <span class="button__text">Geef een hotelgiftcard</span>
+                </button>
+                <button class="header__btn button button__secondary">
+                  <span class="button__circle"></span>
+                  <span class="button__text">Boek een hotel</span>
+                </button>
+              </div>
+            </div>
 
-			<!-- ABOUT -->
-			<div class="about">
-				<div class="container">
-					<div class="about-inner">
-						<section class="about-col">
-							<h2 class="section-title">Коротко о нас</h2>
-							<p>Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный прокси для работы в Instagram, Вконтакте,Однокласниках или Авито? Вы увлекаетесь букмекерскими ставками или покером? SEO,SMM, просто безопасный серфинг или другие задачи? Тогда вы по адресу.</p>
-							<p>Мы предлагаем анонимные, элитные, прокси-сервера с качественной круглосуточной поддержкой.</p>
-							<h2 class="section-title">Быстрая настройка</h2>
-							<div class="browsers-list browsers-list_sm">
-								<div class="browser-item">
-									<div class="browser-img contain-img">
-										<img src="img/browsers/browser-1.png" alt="" class="image">
-									</div>
-									<div class="browser-dropdown">
-										<ul class="instructions-list">
-											<li class="instruction-item">Настройки Safari</li>
-											<li class="instruction-item">Дополнение</li>
-											<li class="instruction-item">Прокси</li>
-											<li class="instruction-item">Выбираем галочку HTTPS</li>
-											<li class="instruction-item">Прописываем прокси</li>
-										</ul>
-									</div>
-								</div>
-								<div class="browser-item">
-									<div class="browser-img contain-img">
-										<img src="img/browsers/browser-2.png" alt="" class="image">
-									</div>
-									<div class="browser-dropdown">
-										<ul class="instructions-list">
-											<li class="instruction-item">Настройки Chrome</li>
-											<li class="instruction-item">Дополнение</li>
-											<li class="instruction-item">Прокси</li>
-											<li class="instruction-item">Выбираем галочку HTTPS</li>
-											<li class="instruction-item">Прописываем прокси</li>
-										</ul>
-									</div>
-								</div>
-								<div class="browser-item">
-									<div class="browser-img contain-img">
-										<img src="img/browsers/browser-3.png" alt="" class="image">
-									</div>
-									<div class="browser-dropdown">
-										<ul class="instructions-list">
-											<li class="instruction-item">Настройки IE</li>
-											<li class="instruction-item">Дополнение</li>
-											<li class="instruction-item">Прокси</li>
-											<li class="instruction-item">Выбираем галочку HTTPS</li>
-											<li class="instruction-item">Прописываем прокси</li>
-										</ul>
-									</div>
-								</div>
-								<div class="browser-item">
-									<div class="browser-img contain-img">
-										<img src="img/browsers/browser-4.png" alt="" class="image">
-									</div>
-									<div class="browser-dropdown">
-										<ul class="instructions-list">
-											<li class="instruction-item">Настройки Firefox</li>
-											<li class="instruction-item">Дополнение</li>
-											<li class="instruction-item">Прокси</li>
-											<li class="instruction-item">Выбираем галочку HTTPS</li>
-											<li class="instruction-item">Прописываем прокси</li>
-										</ul>
-									</div>
-								</div>
-								<div class="browser-item">
-									<div class="browser-img contain-img">
-										<img src="img/browsers/browser-5.png" alt="" class="image">
-									</div>
-									<div class="browser-dropdown">
-										<ul class="instructions-list">
-											<li class="instruction-item">Настройки Opera</li>
-											<li class="instruction-item">Дополнение</li>
-											<li class="instruction-item">Прокси</li>
-											<li class="instruction-item">Выбираем галочку HTTPS</li>
-											<li class="instruction-item">Прописываем прокси</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</section>
-						<div class="about-col">
-							<secton class="entry-about">
-								<div class="entry-img for-img">
-									<img src="img/user.png" alt="">
-								</div>
-								<div class="entry-descr">
-									<h2 class="section-title">Вход в личный кабинет</h2>
-									<p>Для того чтобы получить вашу покупку, вам необходимо ввести код доступа, который пришел на почту оплаты</p>
-								</div>
-							</secton>
-							<div class="entry-form">
-								<form class="entry">
-									<div class="input-wrap">
-										<input type="text" class="form-text" placeholder="Введите ваш код">
-										<button class="btn btn-primary btn-sm">Войти</button>
-									</div>
-								</form>
-							</div>
-							<secton class="entry-payment">
-								<h2 class="section-title">Принимаем к оплате:</h2>
-								<div class="for-img"><img src="img/payment.png" alt=""></div>
-							</secton>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- ABOUT END-->
+            <button class="header__burger burger" aria-label="toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
 
-			<!-- ADVANTAGES -->
-			<section class="section">
-				<div class="container">
-					<div class="section-inner">
-						<h2 class="section-title">Наши преимущества</h2>
-						<div class="advantages-grid">
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-1.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title">Быстрые сервера</h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-2.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title">поддержка 24\7</h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-3.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title">моментальная активация </h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-4.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title">Доступные цены</h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-5.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title"> cash back 10%</h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-							<div class="advantages-item">
-								<div class="advantages-img contain-img">
-									<img src="img/advantages/advantages-6.png" alt="" class="image">
-								</div>
-								<div class="advantages-text">
-									<h3 class="advantages-title">отсутствие логирования</h3>
-									<p class="advantages-descr">Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- ADVANTAGES END -->
+      <!-- HERO START -->
+      <div class="hero">
+        <div class="container">
+          <picture class="hero__image">
+            <source srcset="images/img_listpage_hero-banner-theme-mobile.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="images/img_listpage_hero-banner-theme-mobile.jpg" media="(max-width: 768px)">
+            <source srcset="images/img_listpage_hero-banner-theme-desktop.webp" type="image/webp">
+            <img class="image" src="images/img_listpage_hero-banner-theme-desktop.jpg" alt="hero image" />
+         </picture>
 
-			<!-- RATES -->
-			<section class="section section-rates">
-				<div class="container">
-					<div class="section-inner">
-						<div class="tabs rates-tabs">
-							<div class="tabs-header">
-								<h2 class="section-title">Выберите нужную страну:</h2>
-								<div class="tab-toggle" data-tab='price-1'>
-									<span class="tab-toggle-icon contain-img">
-										<img class="image" src="img/flags/flag-1.png" alt="">
-									</span>
-									<span class="tab-toggle-text">Россия</span>
-								</div>
-								<div class="tab-toggle tab-toggle_active" data-tab='price-2'>
-									<span class="tab-toggle-icon contain-img">
-										<img class="image" src="img/flags/flag-2.png" alt="">
-									</span>
-									<span class="tab-toggle-text">Украина</span>
-								</div>
-								<div class="tab-toggle" data-tab='price-3'>
-									<span class="tab-toggle-icon contain-img">
-										<img class="image" src="img/flags/flag-3.png" alt="">
-									</span>
-									<span class="tab-toggle-text">Европа</span>
-								</div>
-								<div class="tab-toggle" data-tab='price-4'>
-									<span class="tab-toggle-icon contain-img">
-										<img class="image" src="img/flags/flag-4.png" alt="">
-									</span>
-									<span class="tab-toggle-text">США</span>
-								</div>
-							</div>
-							<div class="tabs-body">
-								<div class="tab-content" data-tab='price-1'>
-									<div class="rates-grid">	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="tab-content tab-content_active" data-tab='price-2'>
-									<div class="rates-grid">	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												грн. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="rates-action">
-										<button class="btn btn-default btn-block">Показать еще тарифы</button>
-									</div>
-								</div>
-								<div class="tab-content" data-tab='price-3'>
-									<div class="rates-grid">	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="rates-action">
-										<button class="btn btn-default btn-block">Показать еще тарифы</button>
-									</div>
-								</div>
-								<div class="tab-content" data-tab='price-4'>
-									<div class="rates-grid">	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>	
-										<div class="rate-item">
-											<h3 class="rate-title">100 IP АДРЕСОВ</h3>
-											<div class="rate-price">
-												<span class="rate-price-amount">2900.00</span>
-												руб. в месяц
-											</div>	
-											<div class="rate-descr">
-												<ul class="custom-list">
-													<li>Тип прокси HTTP/SOCKS</li>
-													<li>Скорость 100 мb/s</li>
-													<li>Протокол IPv4</li>
-												</ul>
-											</div>
-											<div class="rate-action">
-												<a href="#" class="btn btn-primary btn-block btn-iconed">
-													<span class="btn-icon for-img">
-														<img src="img/basket.png" alt="">
-													</span>
-													Купить
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="rates-action">
-										<button class="btn btn-default btn-block">Показать еще тарифы</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- RATES END -->
+          <div class="hero__text">
+            <p class="hero__subtitle">Barcelona</p>
+            <h1 class="hero__title">Het hart van Spanje</h1>
+            <p class="hero__descr">Het bruisende Barcelona. Met het geluid van castagnetten, de geur van gegrilde gamba’s en de fruitige smaak van sangria ben je er in gedachten al!</p>
+          </div>
+        </div>
+      </div>
+      <!-- HERO END -->
 
-			<!-- BUNNER -->
-			<section class="section section-partners">
-				<div class="container">
-					<div class="section-inner">
-						<h2 class="section-title">С кем мы работаем</h2>
-						<div class="for-img">
-							<img src="img/partners.png" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- BUNNER -->
+      <!-- FILTERS START -->
+      <div class="filter__section">
+        <div class="container">
+          <div class="filter__inner">
+            <div class="filter__col">
+              <label for="datepicker" class="sr-only">Choose date</label>
+              <input id="datepicker" class="datepicker" type="text" name="dates">
+            </div>
+            <div class="filter__col">
+              <label for="Guests" class="sr-only">Guests</label>
+              <select id="Guests" class="select select__user">
+                <option value="1 volwassenen  -  0 kinderen">1 volwassenen  -  0 kinderen</option>
+                <option value="1 volwassenen  -  1 kinderen">1 volwassenen  -  1 kinderen</option>
+                <option value="2 volwassenen  -  0 kinderen" selected>2 volwassenen  -  0 kinderen</option>
+                <option value="2 volwassenen  -  1 kinderen">2 volwassenen  -  1 kinderen</option>
+                <option value="2 volwassenen  -  2 kinderen">2 volwassenen  -  2 kinderen</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FILTERS END -->
 
-			<!-- BUNNER -->
-			<section class="section">
-				<div class="container">
-					<div class="section-inner">
-						<h2 class="section-title">Заголовок под СЕО текста</h2>
-						<p>Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный прокси для работы в Instagram, Вконтакте,Однокласниках или Авито? Вы увлекаетесь букмекерскими ставками или покером? SEO,SMM, просто безопасный серфинг или другие задачи? Тогда вы по адресу.</p>        
-						<p>Мы предлагаем анонимные, элитные, прокси-сервера с качественной круглосуточной поддержкой. Наши прокси подходят для любых программ,сервисов, социальных сетей, онлайн игр и не только. Авторизация по логин - паролю или IP адресу. Деньги принимаются как добровольные пожертвования на поддержание работоспособности сайта.</p>
-						<p>Быстрые прокси ipv4 и ipv6 (до 100 мбит/с) обеспечат стабильную работу. Нужны разные подсети, у нас их достаточно. Так же вы сможете выбрать тип протокола HTTP/SOCKS.</p>
-						<h3>Заголовок под СЕО текста</h3>
-						<p>Мы предлагаем качественные услуги прокси-серверов пакетами. Вам нужен стабильный индивидуальный прокси для работы в Instagram, Вконтакте,Однокласниках или Авито? Вы увлекаетесь букмекерскими ставками или покером? SEO,SMM, просто безопасный серфинг или другие задачи? Тогда вы по адресу.</p>        
-						<p>Мы предлагаем анонимные, элитные, прокси-сервера с качественной круглосуточной поддержкой. Наши прокси подходят для любых программ,сервисов, социальных сетей, онлайн игр и не только. Авторизация по логин - паролю или IP адресу. Деньги принимаются как добровольные пожертвования на поддержание работоспособности сайта.</p>
-						<p>Быстрые прокси ipv4 и ipv6 (до 100 мбит/с) обеспечат стабильную работу. Нужны разные подсети, у нас их достаточно. Так же вы сможете выбрать тип протокола HTTP/SOCKS.</p>
-					</div>
-				</div>
-			</section>
-			<!-- BUNNER -->
+      <!-- CARDS START -->
+      <div class="card__section hidden">
+        <div class="container">
+          <h2 class="card__section__heading sr-only">Hotels</h2>
+          <div class="card__list">
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_amsterdam.webp" type="image/webp">
+                  <img class="image" src="images/img_category_amsterdam.jpg" alt="Amsterdam" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 53%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		</div>
-		<!-- CONTENT END -->
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_brussel.webp" type="image/webp">
+                  <img class="image" src="images/img_category_brussel.jpg" alt="Brussel" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 73%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		<!-- FOOTER -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-inner">
-					<div class="footer-left">
-						<a href="#" class="footer-logo for-img">
-							<img src="img/logo.png" alt="">
-						</a>
-						<p>Используя наши сервисы, вы соглашаетесь
-						с <a href="#">правилами пользования</a> и возврата. <br>
-						Служба поддержки: <a href="mailto:support@proxywhite.com">support@proxywhite.com</a></p>
-					</div>
-					<div class="footer-middle">
-						<div class="footer-middle-col">
-							<h3 class="footer-title">О компании</h3>
-							<nav class="footer-nav">
-								<ul class="footer-list">
-									<li><a href="#">О нас</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Поддержка</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer-middle-col">
-							<h3 class="footer-title">Услуги</h3>
-							<nav class="footer-nav">
-								<ul class="footer-list">
-									<li><a href="#">Пакетные прокси</a></li>
-									<li><a href="#">Индивидуальные прокси</a></li>
-									<li><a href="#">Цены</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-					<div class="footer-right">
-						<div class="footer-social social">
-							<h3 class="social-title">Мы в социальных сетях:</h3>
-							<div class="social-group">
-								<a href="#" 
-									 class="social-link contain-img" 
-									 aria-label="go to our facebook">
-									 <img class="image" src="img/social/social-fb.png" alt="social-fb">
-								</a>
-								<a href="#" 
-									 class="social-link contain-img" 
-									 aria-label="go to our telegram">
-									 <img class="image" src="img/social/social-telegram.png" alt="social-telegram">
-								</a>
-								<a href="#" 
-									 class="social-link contain-img" 
-									 aria-label="go to our vk">
-									 <img class="image"  src="img/social/social-vk.png" alt="social-vk">
-								</a>
-							</div>
-						</div>
-						<div class="footer-copy">© 2017 - 2019. All rights reserved</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- FOOTER END -->
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_dublin.webp" type="image/webp">
+                  <img class="image" src="images/img_category_dublin.jpg" alt="Dublin" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 42%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		<!-- POPUP -->
-		<!-- <div class="popup-overlay">
-			<div class="popup">
-				<div class="popup-header">
-					<h2 class="popup-title">Благодарим за интерес к нашему сервису!</h2>
-					<button class="popup-close" aria-label="close modal">&nbsp;</button>
-				</div>
-				<div class="popup-body">
-					<div class="notification">
-						<div class="notification-img for-img">
-							<img src="img/info.png" alt="">
-						</div>
-						<div class="notification-text">Неправильный код! Если это ошибка, <a href="#">напишите нам</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="popup-overlay">
-			<div class="popup">
-				<div class="popup-header">
-					<h2 class="popup-title">Благодарим за интерес к нашему сервису!</h2>
-					<button class="popup-close" aria-label="close modal">&nbsp;</button>
-				</div>
-				<div class="popup-body">
-					<div class="notification">
-						<div class="notification-img for-img">
-							<img src="img/info.png" alt="">
-						</div>
-						<div class="notification-text">Для входа в аккаунт, нужно <a href="#">приобрести</a> премиум код!</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_four-seasons.webp" type="image/webp">
+                  <img class="image" src="images/img_category_four-seasons.jpg" alt="Four seasons" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 83%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		<div class="popup-overlay">
-			<div class="popup">
-				<div class="popup-header">
-					<h2 class="popup-title">Обратите внимание!</h2>
-					<button class="popup-close" aria-label="close modal">&nbsp;</button>
-				</div>
-				<div class="popup-body">
-					
-					<div class="proxi-form">
-						<div class="proxi-col-6 form-group form-group_inline">
-							<label for="code" class="form-label_sm">Ваш код:</label>
-							<input id="code" type="text" class="form-text">
-						</div>
-						<div class="proxi-col-6 form-group form-group_inline">
-							<label for="proxi-type" class="form-label_sm">Тип прокси:</label>
-							<input id="proxi-type" type="text" class="form-text">
-						</div>
-						<div class="proxi-col-12">
-							<button class="btn btn-primary btn-sm">Скачать список прокси</button>
-						</div>
-					</div>
-		
-					<div class="popup-section">
-						<div class="account account-yes">
-							<div class="account-text">
-								<div class="for-img">
-									<img src="img/info.png" alt="">
-								</div>
-								<span>Время окончания: <span class="account-yes-date">2019-08-06</span></span>
-							</div>
-							<a href="#" class="btn btn-primary btn-sm">Продлить аккаунт</a>
-						</div>
-						<div class="popup-section-block">
-							<h3 class="popup-section-title">Популярные ответы на часто задаваемые вопросы:</h3>
-							<ul class="dotted-list">
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-							</ul>
-							<p><strong>Больше информации можно найти в расширенной базе знаний. Если вы не нашли ответ на свой вопрос - <a href="#">напишите нам</a></strong></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_frankfurt.webp" type="image/webp">
+                  <img class="image" src="images/img_category_frankfurt.jpg" alt="Frankfurt" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 80%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		<div class="popup-overlay">
-			<div class="popup">
-				<div class="popup-header">
-					<h2 class="popup-title">Обратите внимание!</h2>
-					<button class="popup-close" aria-label="close modal">&nbsp;</button>
-				</div>
-				<div class="popup-body">
-					
-					<div class="proxi-form">
-						<div class="proxi-col-6 form-group form-group_inline">
-							<label for="code" class="form-label_sm">Ваш код:</label>
-							<input id="code" type="text" class="form-text">
-						</div>
-						<div class="proxi-col-6 form-group form-group_inline">
-							<label for="proxi-type" class="form-label_sm">Тип прокси:</label>
-							<input id="proxi-type" type="text" class="form-text">
-						</div>
-						<div class="proxi-col-12">
-							<button class="btn btn-primary btn-sm">Скачать список прокси</button>
-						</div>
-					</div>
-		
-					<div class="popup-section">
-						<div class="account account-no">
-							<div>Время окончания: <span class="account-status">Аккаунт не активирован</span></div>
-							<div class="account-text">
-								<div class="for-img">
-									<img src="img/info.png" alt="">
-								</div>
-								<span>Для активации прокси сервисов обратитесь в <a href="#">службу поддержки</a></span>
-							</div>
-						</div>
-						<div class="popup-section-block">
-							<h3 class="popup-section-title">Популярные ответы на часто задаваемые вопросы:</h3>
-							<ul class="dotted-list">
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-								<li>Мы предлагаем качественные услуги прокси-серверов</li>
-							</ul>
-							<p><strong>Больше информации можно найти в расширенной базе знаний. Если вы не нашли ответ на свой вопрос - <a href="#">напишите нам</a></strong></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_hamburg.webp" type="image/webp">
+                  <img class="image" src="images/img_category_hamburg.jpg" alt="Hamburg" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-		<div class="popup-overlay">
-			<div class="popup">
-				<div class="popup-header">
-					<h2 class="popup-title">Оформление заказа <span class="popup-title_main">PROXY РОССИЯ</span></h2>
-					<button class="popup-close" aria-label="close modal">&nbsp;</button>
-				</div>
-				<div class="popup-body">
-					<form class="payment-form">
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_hoxton.webp" type="image/webp">
+                  <img class="image" src="images/img_category_hoxton.jpg" alt="Hoxton" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-						<div class="payment-form-info">
-							<div class="payment-form-col-4 form-group">
-								<label class="form-label">Введите ваш e-mail</label>
-								<input type="text" class="form-text" placeholder="admin@googlemail.com">
-							</div>
-							<div class="payment-form-col-4 form-group">
-								<span class="form-label">Тип прокси</span>
-								<div class="radio-wrap">
-									<label class="radio">
-										<input class="visually-hidden" type="radio" name="proxi type">
-										<span class="radio-text">HTTP</span>
-									</label>
-									<label class="radio">
-										<input class="visually-hidden" type="radio" name="proxi type">
-										<span class="radio-text">SOCKS</span>
-									</label>
-								</div>
-							</div>
-							<div class="payment-form-col-4 form-group">
-								<label class="form-label">Время действия</label>
-								<select id="section" class="form-select">
-									<option value="support">1 месяц</option>
-									<option value="support">2 месяца</option>
-									<option value="support">3 месяца</option>
-								</select>
-							</div>
-							<div class="payment-form-col-8 form-group">
-								<label class="form-label">Выберите интересующий вас город</label>
-								<select id="section" class="form-select">
-									<option value="support">Москва</option>
-									<option value="support">Казань</option>
-									<option value="support">Тверь</option>
-								</select>
-							</div>
-							<div class="payment-form-col-4 form-group">
-								<label class="form-label">Количество</label>
-								<select id="section" class="form-select">
-									<option value="support">1</option>
-									<option value="support">2</option>
-									<option value="support">3</option>
-								</select>
-							</div>
-							<div class="payment-form-col-6 form-group">
-								<a href="#" class="btn btn-primary btn-sm btn-block">Добавить</a>
-							</div>
-						</div>
-						
-						<div class="popup-section">
-							<div class="payment-form-methods">
-								<div class="payment-form-col-3">
-									<label class="radio radio-outline">
-										<input class="visually-hidden" type="radio" name="payment">
-										<span class="radio-text">
-											<span class="for-img">
-												<img src="img/visa.png" alt="">
-											</span>
-										</span>
-									</label>
-								</div>
-								<div class="payment-form-col-3">
-									<label class="radio radio-outline">
-										<input class="visually-hidden" type="radio" name="payment">
-										<span class="radio-text">
-											<span class="for-img">
-												<img src="img/yandex.png" alt="">
-											</span>
-										</span>
-									</label>
-								</div>
-								<div class="payment-form-col-3">
-									<label class="radio radio-outline">
-										<input class="visually-hidden" type="radio" name="payment">
-										<span class="radio-text">
-											<span class="for-img">
-												<img src="img/webmoney.png" alt="">
-											</span>
-										</span>
-									</label>
-								</div>
-								<div class="payment-form-col-3">
-									<label class="radio radio-outline">
-										<input class="visually-hidden" type="radio" name="payment">
-										<span class="radio-text">
-											<span class="for-img">
-												<img src="img/privat.png" alt="">
-											</span>
-										</span>
-									</label>
-								</div>
-							</div>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_ink-hotel.webp" type="image/webp">
+                  <img class="image" src="images/img_category_ink-hotel.jpg" alt="Ink hotel" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-							<div class="payment-form-promo">
-								<div class="payment-form-col-6 form-group">
-									<label class="form-label">Введите ваш промо код</label>
-									<input type="text" class="form-text" placeholder="Promo">
-								</div>
-								<div class="payment-form-col-6 form-group">
-									<a href="#" class="btn btn-primary btn-sm">Активировать промо код</a>
-								</div>
-							</div>
-							<div class="payment-form-total">
-								<div class="payment-form-col-6">
-									Cумма к оплате: <span class="total-amount">5 236</span> грн.
-								</div>
-								<div class="payment-form-col-6">
-									<a href="#" class="btn btn-primary btn-sm btn-block">Купить прокси</a>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div> -->
-		<!-- POPUP END -->
-	</div>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_keulen.webp" type="image/webp">
+                  <img class="image" src="images/img_category_keulen.jpg" alt="Keulen" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
 
-	<script src="js/lib.min.js"></script>
-	<script src="js/common.js"></script>
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_london.webp" type="image/webp">
+                  <img class="image" src="images/img_category_london.jpg" alt="Four seasons" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
+
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_parijs.webp" type="image/webp">
+                  <img class="image" src="images/img_category_parijs.jpg" alt="Parijs" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
+            
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_radisson-blu.webp" type="image/webp">
+                  <img class="image" src="images/img_category_radisson-blu.jpg" alt="Radisson blu" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
+
+            <a href="#" class="card__item">
+              <div class="card__media">
+                <div class="card__img__overlay"></div>
+                <picture class="card__image cover__img">
+                  <source srcset="images/img_category_westcord.webp" type="image/webp">
+                  <img class="image" src="images/img_category_westcord.jpg" alt="Westcord" />
+               </picture>
+              </div>
+              <div class="card__text">
+                <p class="card__label">Barcelona</p>
+                <h3 class="card__title">Four Seasons Hotel George V</h3>
+                <div class="card__rating rating">
+                  <div class="rating__inner" style="width: 93%;"></div>
+                </div>
+                <p class="card__descr">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft 
+                  een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                <p class="card__price">vanaf € 205 per nacht</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- CARDS END -->
+
+      <!-- LOADER START -->
+      <div class="loader">
+        <div class="loader__inner"></div>
+      </div>
+      <!-- LOADER END -->
+
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
 </body>
 </html>
-		
