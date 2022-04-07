@@ -47,7 +47,7 @@ $(document).ready(function() {
   setTimeout(function() {
     $('.card__section').removeClass('hidden');
     $('.loader').addClass('hidden');
-  },3000);
+  },2000);
 
   // Filter
   (function() {
